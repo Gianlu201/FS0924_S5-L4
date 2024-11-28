@@ -30,6 +30,10 @@ main {
   padding: 1em;
 }
 
+#testoAlternato p {
+  text-shadow: 1px 1px 1px rgba(146, 146, 146, 0.8);
+}
+
 #testoAlternato .parole {
   display: inline-block;
   color: #6b969d;
