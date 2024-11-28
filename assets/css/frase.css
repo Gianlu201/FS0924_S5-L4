@@ -14,3 +14,65 @@
   box-sizing: border-box;
   font-family: 'Bree Serif', serif;
 }
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#testoAlternato {
+  font-size: 3.5em;
+  color: #333;
+  line-height: 1.5;
+  border: 5px solid #333;
+  padding: 1em;
+}
+
+#testoAlternato .parole {
+  display: inline-block;
+  color: #6b969d;
+  position: relative;
+  width: 400px;
+  height: 50px;
+  /* border: 1px solid black; */
+  font-size: 0;
+}
+
+.parole i {
+  font-size: 3.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0%;
+  line-height: 1em;
+  animation: 6s ease-in-out 0s infinite fallDown;
+}
+
+.parole i:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.parole i:nth-child(3) {
+  animation-delay: 4s;
+}
+
+@keyframes fallDown {
+  0% {
+    top: -50%;
+    opacity: 70%;
+  }
+  10% {
+    top: 0%;
+    opacity: 100%;
+  }
+  40% {
+    top: 100%;
+    opacity: 0%;
+  }
+  to {
+    top: -50%;
+    opacity: 0%;
+  }
+}
