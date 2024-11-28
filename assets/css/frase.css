@@ -8,3 +8,9 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bree Serif', serif;
+}
